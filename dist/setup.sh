@@ -219,6 +219,7 @@ configure() {
              -e BITCOIN_VERSION=$BITCOIN_VERSION \
              -e LIGHTNING_VERSION=$LIGHTNING_VERSION \
              -e SPARKWALLET_VERSION=$SPARKWALLET_VERSION \
+             -e GRAFANA_VERSION=$GRAFANA_VERSION \
              --log-driver=none$pw_env \
              --network none \
              --rm$interactive cyphernode/cyphernodeconf:$CONF_VERSION $user yo --no-insight cyphernode$gen_options $recreate
@@ -773,6 +774,7 @@ PYCOIN_VERSION="v0.2.0-rc.1"
 BITCOIN_VERSION="v0.17.1"
 LIGHTNING_VERSION="v0.7.0"
 SPARKWALLET_VERSION="standalone"
+GRAFANA_VERSION="v0.1-rc1"
 
 SETUP_DIR=$(dirname $(realpath $0))
 
